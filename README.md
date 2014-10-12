@@ -1,29 +1,36 @@
-# RBMA - Future Instruments
+# JP site navbar weejeet
 
-Repo for the Future Instruments microsite for Red Bull Music Academy
+Grab the code from the build folder, which will look something like this:
 
-## Setup
-
-The project runs on middleman, so you'll want to get that set up:
-
-    sudo gem install middleman
-
-Then run the bundler to ensure the necessary gems are installed:
-
-    bundle install
-
-Bower is used for package management:
-
-    bower install
-    
-To get running, start the middleman server:
-  
-    middleman
-
-The site is now running at `http://0.0.0.0:4567/`
-
-## Building
-
-Middleman builds to a static `build` folder in the root of the project. To create/update this simply run:
-
-    middleman build
+```
+<link href="stylesheets/navbar-0a54c870.css" rel="stylesheet" type="text/css" />
+<header class='main-navbar' id='header'>
+  <a class='logo' href='http://www.redbullmusicacademy.jp/jp/magazine'>
+    <div class='logo-text'>&larr;&nbsp; Back</div>
+    <div class='logo-icon'></div>
+    <div class='logo-text'>Red Bull Music Academy</div>
+  </a>
+  <nav class='nav-desktop' id='desktop_nav'>
+    <ul class='nav-main'>
+      <li class='main-item'>
+        <a href='http://www.redbullmusicacademy.jp/jp/events'>Events</a>
+      </li>
+      <li class='main-item'>
+        <a href='http://www.redbullmusicacademy.jp/jp/magazine'>Magazine</a>
+      </li>
+      <li class='main-item'>
+        <a href='http://www.redbullmusicacademy.jp/jp/lectures'>Lectures</a>
+      </li>
+      <li class='main-item'>
+        <a href='http://www.redbullmusicacademy.jp/jp/radio'>Radio</a>
+      </li>
+      <li class='main-item'>
+        <a href='http://www.redbullmusicacademy.jp/jp/about-the-academy'>About</a>
+      </li>
+      <li class='main-item'>
+        <a class='js-external-link' href='http://www.redbullmusicacademy.com/home/' target='_blank'>English</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+```
