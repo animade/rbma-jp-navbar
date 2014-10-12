@@ -1,3 +1,7 @@
+$logo: 'http://www.redbullmusicacademy.jp/img/fe/sprite_logo.png';
+
+@import "base/base";
+
 @font-face { 
   font-family: "ClanPro-NarrUltra"; 
   src:  url("../fonts/ClanPro-NarrUltra.eot"); 
@@ -31,7 +35,7 @@
   width: 107px; 
   height: 64px; 
   border-right: 1px solid white; 
-  background: transparent url("../images/sprite_logo.png") top left no-repeat; 
+  background: transparent url($logo) top left no-repeat; 
   background-size: 100%; 
 }
 .main-navbar .logo .logo-text { 
