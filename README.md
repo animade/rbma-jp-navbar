@@ -3,7 +3,7 @@
 Grab the code from the build folder, which will look something like this:
 
 ```
-<link href="stylesheets/navbar-0a54c870.css" rel="stylesheet" type="text/css" />
+<link href="stylesheets/navbar.css" rel="stylesheet" type="text/css" />
 <header class='main-navbar' id='header'>
   <a class='logo' href='http://www.redbullmusicacademy.jp/jp/magazine'>
     <div class='logo-text'>&larr;&nbsp; Back</div>
