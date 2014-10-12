@@ -1,0 +1,53 @@
+// ==========================================================================
+//
+// Page controls - Info overlay rollover, nav rollover, next and previous buttons
+// 
+
+.control {
+  position: absolute;
+  opacity: 0;
+}
+
+// Pagination
+// -------------------------------------------------------
+/*.control*/.pagination {
+  top: 0;
+  width: 20%;
+  min-width: 80px;
+  height: 100%;
+  
+  &.next {
+    right: 0;
+
+    &.light:hover {
+      @extend %cursor--next--light;
+    }
+
+    &.dark:hover {
+      @extend %cursor--next--dark;
+    }
+  }
+
+  &.prev {
+    left: 0;
+
+    &.light:hover {
+      @extend %cursor--prev--light;
+    }
+
+    &.dark:hover {
+      @extend %cursor--prev--dark;
+    }
+  }
+}
+
+// Info overlay rollover
+// -------------------------------------------------------
+/*.control*/.info {
+  bottom: 0;
+  width: 60%;
+  height: 30%;
+  left: 50%;
+  margin-left: -30%;
+  cursor: pointer;
+}

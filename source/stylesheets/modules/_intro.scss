@@ -1,0 +1,171 @@
+// ==========================================================================
+//
+// Introduction panel
+//
+
+.intro {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.intro--content {
+  position: relative;
+  margin: 0 auto;
+  width: 65%;
+  max-width: 650px;
+  min-width: 300px;
+  top: 50%;
+  margin-top: 0;
+  @include transform(translateY(-50%));
+  opacity: 1;
+  filter: blur(0);
+  -webkit-filter: blur(0);
+  -moz-filter: blur(0);
+  -o-filter: blur(0);
+  -ms-filter: blur(0);
+  @include transition(all 0.8s, -webkit-filter 1.2s);
+
+  &.hidden {
+    opacity: 0;
+    margin-top: 20px;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+  }
+
+  .intro--description {
+    opacity: 1;
+    @include transform(translateY(0));
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+    @include transition(all 0.8s, -webkit-filter 0.5s);
+
+    &.hidden {
+      opacity: 0;
+      filter: blur(10px);
+      -webkit-filter: blur(10px);
+      -moz-filter: blur(10px);
+      -o-filter: blur(10px);
+      -ms-filter: blur(10px);
+      @include transform(translateY(20px));
+    }
+  }
+}
+
+// Tutorial
+// --------------------------------------------------
+
+.intro--tutorial--content {
+  position: absolute;
+  margin: 0 auto;
+  width: 65%;
+  max-width: 650px;
+  min-width: 300px;
+  top: 50%;
+  left: 50%;
+  @include transform(translateX(-50%) translateY(-50%));
+
+  .intro--tutorial--step {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    @include transition(all 0.8s);
+
+    p { text-align: center; }
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+      @include transform(translateX(0) translateY(-50%));
+    }
+
+    &.no-transition {
+      @include transition(none);
+    }
+  }
+}
+
+.tut--info--teaser {
+  position: absolute;
+  bottom: -30%;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  opacity: 0;
+  @include transform(translateY(1%));
+  @include transition(all cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.2s, opacity ease-in 0.7s);
+
+  &.active {
+    opacity: 1;
+    bottom: 0;
+    @include transform(translateY(0));
+  }
+
+  &.no-transition {
+    @include transition(none);
+  }
+
+  .tut--info--top-gradient {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0;
+    bottom: 0;
+    background-image: url('../images/gradient-overlay-front-black.png');
+    background-repeat: repeat-x;
+    background-size: 5px 100%;
+    background-color: transparent;
+  }
+}
+
+
+// Arrow indicators
+// ---------------------------------------------------
+%tutorial--arrow {
+  width: 64px;
+  height: 35px;
+  position: fixed;
+  top: 50%;
+  background-size: 64px 35px;
+  visibility: hidden;
+  opacity: 0;
+  @include transition(all 0.8s);
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    @include transform(translateX(0) translateY(-50%));
+  }
+
+  &.no-transition {
+    @include transition(none);
+  }
+}
+
+.tut--arrow--left {
+  @extend %tutorial--arrow;
+  left: 10%;
+  background-image: url('../images/arrow-prev-light-2x.png');
+  @include transform(translateX(100%) translateY(-50%));
+}
+
+.tut--arrow--right {
+  @extend %tutorial--arrow;
+  right: 10%;
+  background-image: url('../images/arrow-next-light-2x.png');
+  @include transform(translateX(-100%) translateY(-50%));
+}

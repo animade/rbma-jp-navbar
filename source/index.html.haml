@@ -1,0 +1,104 @@
+= partial "navbar"
+
+/ Future Instruments 2214
+
+.container
+
+  .instruments.blur.js-instruments
+
+    - instruments_array = data.instruments.to_a
+  
+    - instruments_array.shuffle.each_with_index do |instrument, index|
+
+      - instrument = instrument[1]
+
+      .slide.js-slide{:class => [("active" if index == 0), instrument.shade]}
+
+        .slide--bg--blurred.js-slide-bg-blurred{:style => 'background-image: url(' + instrument.image_blurred + ')'}
+
+        .slide--bg.js-slide-bg{:style => 'background-image: url(' + instrument.image + ')'}
+
+        %h2.author= instrument.author
+
+        .instrument--overlay--bg.js-instrument-overlay-bg
+
+        .instrument--overlay.js-instrument-overlay
+
+          .instrument--info
+
+            %h2= instrument.title
+
+            = instrument.info
+
+            %p
+              By #{instrument.author}
+
+            .share--buttons
+              %a.share--facebook{:href => '#'}
+              %a.share--twitter{:href => '#'}
+              %a.share--google{:href => '#'}
+              %a.share--email{:href => '#'}
+
+        .instrument--overlay--top-gradient.js-overlay-top-gradient
+
+    .control.pagination.prev.js-prev
+
+    .control.pagination.next.js-next
+
+    .control.info.js-info
+
+    %nav.nav--overlay.js-nav
+      %h2.nav--title
+
+        %button.nav--item.js-about
+          About — Future Instruments 2214
+
+    .about--overlay.js-about-overlay
+
+      .about--content
+
+        %p A Red Bull Music Academy project, for Tokyo 2014
+
+        %p
+          So in this case, we would have instant access to all music everywhere. Everything would be collaborative. People won’t just consume music, but participate. As everything is hyperconnected, nothing is passive. Everything would contain feedback loops. We’ll be less likely to share whole songs, written by one person, but hooks and melodies and beats would go viral and be interpreted en masse, and the piece of music would be an emergent property of these patterns.
+
+        %p Images all by Kim Laughton
+
+.intro.light.js-intro
+
+  .intro--content.hidden.js-intro-content
+    %h1 Future Instruments 2214
+
+    %p.intro--description.hidden.js-intro-description
+      We asked 12 Artists, Musicians, Designers and Futurists, to imagine what an instrument would be 200 years from now. These predictions have been interpreted and illustrated by Kim Laughton.
+
+  .intro--tutorial--content
+
+    .intro--tutorial--step.hidden.js-tut-step-1
+      %p To view the next project, click anywhere to the right
+
+    .intro--tutorial--step.hidden.js-tut-step-2
+      %p To view the previous project, click anywhere to the left
+
+    .intro--tutorial--step.hidden.js-tut-step-3
+      %p To view the project description, click towards the bottom of the screen
+
+  .tut--arrow--left.js-tut-arrow-left
+
+  .tut--arrow--right.js-tut-arrow-right
+
+  .tut--info--teaser.js-tut-teaser
+
+    .instrument--info
+
+      %h2 Project Title
+
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pellentesque dolor vitae nisl consequat condimentum et at dolor. Sed rutrum tortor at aliquet condimentum. Pellentesque tortor urna, pellentesque at ullamcorper in, tristique ut justo. Sed lectus risus, maximus at egestas et, mollis at felis. In hac habitasse platea dictumst. Nam vitae maximus turpis, sit amet semper odio. Quisque fringilla nisl bibendum, ultrices libero convallis, ullamcorper purus. Maecenas gravida sit amet turpis in ornare. Proin magna sem, efficitur ut mollis eleifend, viverra et ligula.
+
+    .tut--info--top-gradient
+
+.preloader.js-preloader
+
+
+

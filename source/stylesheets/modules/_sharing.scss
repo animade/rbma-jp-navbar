@@ -1,0 +1,57 @@
+// ==========================================================================
+//
+// Social sharing
+//
+
+%share--btn {
+  display: table-cell;
+  border: none;
+  font-size: 45px;
+  width: 25%;
+  text-align: left;
+  @extend %social--icons;
+  opacity: 0.6;
+  @include transition(opacity 0.25s);
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media #{$sm} {
+    font-size: 32px;
+  }
+}
+
+.share--buttons {
+  display: table;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.share--facebook {
+  @extend %share--btn;
+  &:before {
+    content: "\f09a";
+  }
+}
+
+.share--twitter {
+  @extend %share--btn;
+  &:before {
+    content: "\f099";
+  }
+}
+
+.share--google {
+  @extend %share--btn;
+  &:before {
+    content: "\f0d5";
+  }
+}
+
+.share--email {
+  @extend %share--btn;
+  &:before {
+    content: "\f003";
+  }
+}

@@ -1,0 +1,34 @@
+// ==========================================================================
+//
+// Base CSS. 
+// Only include things which need to appear in *every* page
+//
+//
+
+@import "../../bower_components/normalize-css/normalize";
+
+// Installed as a gem for lots of annoying reasons
+@import "bourbon";
+
+body {
+
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline:none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a,
+a:visited {
+    background: transparent;
+    text-decoration: underline;
+    outline: 0;
+}
+
+a:focus { outline: 0; }

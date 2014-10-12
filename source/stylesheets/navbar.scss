@@ -1,0 +1,170 @@
+@font-face { 
+  font-family: "ClanPro-NarrUltra"; 
+  src:  url("../fonts/ClanPro-NarrUltra.eot"); 
+  src:  url("../fonts/ClanPro-NarrUltra.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/ClanPro-NarrUltra.svg#ClanPro-NarrUltra") format("svg"), 
+        url("../fonts/ClanPro-NarrUltra.woff") format("woff"), 
+        url("../fonts/ClanPro-NarrUltra.ttf") format("truetype"); 
+  font-weight: "normal"; 
+  font-style: "normal"; 
+}
+
+.main-navbar { 
+  display: block; 
+  position: fixed; 
+  width: 100%; 
+  height: 64px; 
+  z-index: 100; 
+  border-bottom: 1px solid white; 
+  background-color: black; 
+  font-family: "ClanPro-NarrUltra", Tahoma, Arial, sans-serif;
+}
+
+.main-navbar .logo { 
+  display: block; 
+  float: left; 
+  height: 64px; 
+}
+.main-navbar .logo .logo-icon { 
+  display: inline-block; 
+  vertical-align: top; 
+  width: 107px; 
+  height: 64px; 
+  border-right: 1px solid white; 
+  background: transparent url("../images/sprite_logo.png") top left no-repeat; 
+  background-size: 100%; 
+}
+.main-navbar .logo .logo-text { 
+  display: inline-block; 
+  vertical-align: top; 
+  height: 64px; 
+  line-height: 64px; 
+  padding: 0 32px; 
+  border-right: 1px solid white; 
+  font-size: 12px; 
+  color: white; 
+  text-decoration: none; 
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 480px) { 
+  .main-navbar .logo .logo-text { 
+    display: none; 
+  } 
+}
+
+.main-navbar .nav-desktop { 
+  display: block; 
+  height: 64px; 
+}
+
+.main-navbar .nav-desktop:after { 
+  content: ""; 
+  display: table; 
+  clear: both; 
+}
+
+@media only screen and (max-width: 768px) { 
+  .main-navbar .nav-desktop { 
+    display: none; 
+  } 
+}
+
+.main-navbar .nav-desktop .nav-main { 
+  list-style-type: none; 
+  font-size: 0; 
+}
+
+.main-navbar .nav-desktop .nav-main .main-item {
+  display: inline-block; 
+  position: relative; 
+  height: 64px; 
+  line-height: 64px; 
+}
+
+.main-navbar .nav-desktop .nav-main .main-item:first-child { 
+  padding-left: 32px; 
+}
+
+.main-navbar .nav-desktop .nav-main .main-item a {
+  font-family: inherit;
+  letter-spacing: 0;
+  display: inline-block; 
+  height: 64px; 
+  line-height: 64px; 
+  padding: 0 16px; 
+  font-size: 12px; 
+  color: #a5a5a5; 
+  text-decoration: none; 
+  text-transform: uppercase; 
+  -webkit-transition: color 0.25s; 
+  -moz-transition: color 0.25s; 
+  -ms-transition: color 0.25s; 
+  -o-transition: color 0.25s; 
+  transition: color 0.25s; 
+}
+
+.main-navbar .nav-desktop .nav-main .main-item a:hover { 
+  color: white; 
+}
+.main-navbar .nav-desktop .nav-main .main-item a.flag-gb:before { 
+  content: ""; 
+  position: relative; 
+  display: inline-block; 
+  width: 20px; 
+  height: 20px; 
+  top: 6px; 
+  margin-right: 6px; 
+  background: url("../img/fe/flag_gb.png") top left no-repeat; 
+  background-size: 100%; 
+}
+.main-navbar .nav-desktop .nav-main .main-item:hover a { 
+  color: white; 
+}
+.main-navbar .nav-desktop .nav-sub { 
+  position: absolute; 
+  top: 63px; 
+  left: 0; 
+  height: auto; 
+  line-height: 12px; 
+}
+.main-navbar .nav-desktop .nav-sub .sub-item a { 
+  display: block; 
+  padding: 10px 16px; 
+  border-top: 1px solid #545454; 
+  background-color: black; 
+  font-family: "clan-medium", "mplus-2c-medium", Tahoma, Arial, sans-serif; 
+  font-size: 12px; 
+  -webkit-transition: color 0.25s, background-color 0.25s; 
+  -moz-transition: color 0.25s, background-color 0.25s; 
+  -ms-transition: color 0.25s, background-color 0.25s; -o-transition: color 0.25s, background-color 0.25s; 
+  transition: color 0.25s, background-color 0.25s; 
+}
+.main-navbar .nav-desktop .nav-sub .sub-item a:hover { 
+  background-color: #545454; 
+}
+.main-navbar .btn-open-sidebar { 
+  display: block; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  width: 64px; 
+  height: 64px; 
+  line-height: 64px; 
+  font-family: "fontawesome", sans-serif; 
+  font-size: 32px; 
+  text-decoration: none; 
+  text-align: center; 
+  color: white; 
+  -webkit-transition: color 0.5s; 
+  -moz-transition: color 0.5s; 
+  -ms-transition: color 0.5s; 
+  -o-transition: color 0.5s; 
+  transition: color 0.5s; 
+}
+.main-navbar .btn-open-sidebar:hover { 
+  color: #e91681; 
+}
+.main-navbar .btn-open-sidebar:after { 
+  content: "\f0c9"; 
+}

@@ -1,0 +1,21 @@
+= stylesheet_link_tag  "navbar"
+
+%header#header.main-navbar
+  .logo{:href => '/jp/home/'}
+    .logo-icon
+    .logo-text Red Bull Music Academy
+
+  %nav#desktop_nav.nav-desktop
+    %ul.nav-main
+      %li.main-item
+        %a{:href => '/jp/events/'} Events
+      %li.main-item
+        %a{:href => '/jp/magazine/'} Magazine
+      %li.main-item
+        %a{:href => '/jp/lectures/'} Lectures
+      %li.main-item
+        %a{:href => '/jp/radio/'} Radio
+      %li.main-item
+        %a{:href => '/jp/about-the-academy/'} About
+      %li.main-item
+        %a.js-external-link{:href => 'http://www.redbullmusicacademy.com/home/', :target => '_blank'} English

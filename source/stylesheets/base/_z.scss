@@ -1,0 +1,20 @@
+// ==========================================================================
+//
+// z-index
+// 
+
+.preloader { z-index: 5 }
+
+.intro { z-index: 4 }
+
+.about--overlay.front { z-index: 3 }
+
+.slide.active.show--info--overlay { z-index: 3 }
+
+.nav--overlay { z-index: 2 }
+
+.control { z-index: 2 }
+
+%intro--arrow { z-index: 2 }
+
+.slide.active { z-index: 1 }

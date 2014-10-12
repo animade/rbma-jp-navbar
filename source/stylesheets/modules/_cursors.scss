@@ -1,0 +1,57 @@
+// ==========================================================================
+//
+// Cursors
+// 
+
+// Close cursors
+%cursor-close-light {
+  background-color: black;
+  cursor: url('../images/close-light.png'), pointer;
+  cursor: -webkit-image-set(
+    url('../images/close-light.png') 1x,
+    url('../images/close-light-2x.png') 2x
+  ) 24 24, pointer;
+}
+
+%cursor-close-dark {
+  background-color: white;
+  cursor: url('../images/close-dark.png'), pointer;
+  cursor: -webkit-image-set(
+    url('../images/close-dark.png') 1x,
+    url('../images/close-dark-2x.png') 2x
+  ) 24 24, pointer;
+}
+
+
+// Arrow cursors
+%cursor--next--light {
+  cursor: url('../images/arrow-next-light.png'), pointer;
+  cursor: -webkit-image-set(
+    url('../images/arrow-next-light.png') 1x,
+    url('../images/arrow-next-light-2x.png') 2x
+  ) 32 18, pointer;
+}
+
+%cursor--next--dark {
+  cursor: url('../images/arrow-next-dark.png'), pointer;
+  cursor: -webkit-image-set(
+    url('../images/arrow-next-dark.png') 1x,
+    url('../images/arrow-next-dark-2x.png') 2x
+  ) 32 18, pointer;
+}
+
+%cursor--prev--light {
+  cursor: url('../images/arrow-prev-light.png'), pointer;
+  cursor: -webkit-image-set(
+    url('../images/arrow-prev-light.png') 1x,
+    url('../images/arrow-prev-light-2x.png') 2x
+  ) 32 18, pointer;
+}
+
+%cursor--prev--dark {
+  cursor: url('../images/arrow-prev-dark.png'), pointer;
+  cursor: -webkit-image-set(
+    url('../images/arrow-prev-dark.png') 1x,
+    url('../images/arrow-prev-dark-2x.png') 2x
+  ) 32 18, pointer;
+}

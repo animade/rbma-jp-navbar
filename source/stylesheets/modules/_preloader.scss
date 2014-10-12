@@ -1,0 +1,13 @@
+// ==========================================================================
+//
+// Preloader
+//
+// Blank black screen to momentatrily show while site sets up
+//
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}

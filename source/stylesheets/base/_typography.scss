@@ -1,0 +1,66 @@
+// ==========================================================================
+//
+// Typography
+// 
+
+.container {
+  font-size: 18px;
+}
+
+.light {
+  color: white;
+  a, a:hover, a:visited { color: white; }
+}
+
+.dark {
+  color: black;
+  a, a:hover, a:visited { color: black; }
+}
+
+h1,
+h2, 
+h3,
+a, button {
+  margin: 0;
+  padding: 0;
+  font-family:'Centima Mono W01 Light';
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+h1, h2, a, button {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+
+  .light & { text-shadow: 0 0 10px rgba(255, 255, 255, 1); }
+
+  .dark & { text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: 6px;
+}
+
+h2 { font-size: 20px; }
+
+a {
+  text-decoration: none;
+}
+
+.nav a {
+  font-size: 20px;
+  line-height: 20px;
+
+  .light & { border-bottom: 1px solid white; }
+
+  .dark & { border-bottom: 1px solid black; }
+}
+
+p {
+  font-family:'Univers LT W01 45 Light';
+  line-height: 26px;
+  letter-spacing: 0.8px;
+  font-size: 18px;
+}
