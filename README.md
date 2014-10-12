@@ -34,3 +34,5 @@ Grab the code from the build folder, which will look something like this:
   </nav>
 </header>
 ```
+
+You'll need to add the css in somewhere as well obvz
